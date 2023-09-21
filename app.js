@@ -17,13 +17,7 @@ let div=document.querySelector("#app");
        div.style.padding="2rem";
         let li= document.createElement("li");
         li.classList.add("alllist");
-       li.innerHTML=`<br><span style="color:#40F8FF;"> Name:</span>${pp.name}  <br><br> 
-       <span style="color:#40F8FF;"> Description:</span> ${pp.description} <br><br> 
-       <span style="color:#40F8FF;"> Created-at:</span>${pp.created_at} <br><br>
-        <span style="color:#40F8FF;"> Updated-at:</span>:${pp.updated_at} <br><br> 
-        <span style="color:#40F8FF;"> Product-link:</span>: ${pp.product_link} }<br><br> 
-         <span style="color:#40F8FF;"> Website-link::</span> ${pp.website_link}`;
-        ul.appendChild(li);
+        li.innerHTML=`<br> Name:${pp.name}  <br> <br> Description: ${pp.description} <br><br> Created_at:${pp.created_at} <br><br> Updated_at:${pp.updated_at} <br><br> Product_link: ${pp.product_link} }<br><br>  Website_link ${pp.website_link}`;
          let img=document.createElement("img");
         img.setAttribute("src",pp.image_link);
         li.insertAdjacentElement("afterbegin",img);
